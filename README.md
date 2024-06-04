@@ -18,6 +18,7 @@ This project is an interactive image gallery showcasing various animals. It uses
 
 ## File Structure
 
+```
 gallery/
 │
 ├── assets/
@@ -35,6 +36,7 @@ gallery/
 │ └── Poppins-Regular.ttf
 │
 └── README.md
+```
 
 ## How It Works
 
@@ -73,18 +75,24 @@ The JavaScript file adds interactivity to the gallery. It includes:
 
 When you hover over an image, it will blur and turn grayscale. The info box will slide up, revealing the name and location of the animal. The "Know More" link will appear, which you can click for more information.
 
+![1717478494192](image/README/1717478494192.png)
+
+![1717478358049](image/README/1717478358049.png)
+
 # Coding challenges
 
 challenge folder contains two programs implemented in JavaScript. Each program solves a specific problem and is explained below.
 
 ## File Structure
 
+```
 project-root/
 │
 ├── challenge/
-│ ├── `arrayMap.js`
+│ ├── arrayMap.js
 │ ├── stringTransform.js
 └── README.md
+```
 
 ## Coding Challenge 1: Array Manipulation
 
