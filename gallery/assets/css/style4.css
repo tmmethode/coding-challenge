@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'DIN Condensed';
+    src: url('../font/DINCondensed-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Poppins';
+    src: url('../font/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+body{
+    background-color: black;
+}
+/* Image */
+
+.image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 2px;
+  position: relative;
+  width: 1178px;
+  height: 588px;
+}
+
+.image1,
+.image2,
+.image3,
+.image4 {
+    /* Sets the dimensions of the container */
+    width: 293px;
+    /* Width of the container */
+    height: 588px;
+    /* Height of the container */
+
+    /* Background image properties */
+    background-size: contain;
+    /* Scales the image to fit within the container while maintaining its aspect ratio */
+    background-position: center center;
+    /* Centers the image within the container */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+}
+
+/* Hover effect to make the images black and white */
+.image1:hover, .image2:hover, .image3:hover, .image4:hover {
+    filter: grayscale(100%); /* Apply grayscale filter on hover */
+    filter: blur(5px); /* Apply blur filter on hover */
+  }
+
+.image1 {
+    background-image: url(../images/image1.png);
+    /* Specifies the background image to be used */
+}
+
+.image2 {
+    background-image: url(../images/image2.png);
+    /* Specifies the background image to be used */
+}
+
+.image3 {
+    background-image: url(../images/image3.png);
+    /* Specifies the background image to be used */
+}
+
+.image4 {
+    background-image: url(../images/image4.png);
+    /* Specifies the background image to be used */
+}
+
+/* Info box styling */
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  width: 213px;
+  height: 100px;
+  }
+/* subject name */
+.fennecBox{
+    width: 213px;
+height: 76px;
+font-family: 'DIN Condensed';
+font-style: normal;
+font-weight: 700;
+font-size: 38px;
+line-height: 38px;
+margin: 0%;
+/* or 100% */
+display: flex;
+align-items: flex-end;
+text-transform: uppercase;
+color: #FFFFFF;
+
+}
+
+/* location */
+.location{
+width: 213px;
+height: 16px;
+
+font-family: 'Poppins';
+font-size: 12px;
+line-height: 16.02px;
+/* identical to box height, or 16px */
+display: flex;
+align-items: flex-end;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+opacity: 0.7;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.know-more {
+    display: none; /* Hide the link initially */
+    color: skyblue; /* Sky blue color for the link */
+    text-decoration: none; /* Remove underline from the link */
+    font-weight: bold; /* Optional: Make the link bold */
+    margin-top: 5px; /* Space above the link */
+  }
+  
+  .image1:hover .know-more,
+  .image2:hover .know-more,
+  .image3:hover .know-more,
+  .image4:hover .know-more {
+    display: block; /* Show the link on hover */
+  }
+  
