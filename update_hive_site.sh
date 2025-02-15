@@ -16,6 +16,6 @@ rm hive-site.xml || { echo "Failed to remove existing hive-site.xml"; exit 1; }
 mv hive-site.xml.new hive-site.xml || { echo "Failed to rename downloaded file"; exit 1; }
 
 # Run the schematool command to initialize the schema
-$HIVE_HOME/bin/schematool -dbType derby -initSchema || { echo "Schema initialization failed"; exit 1; }
+$HIVE_HOME/bin/schematool -initSchema -dbType derby || { echo "Schema initialization failed"; exit 1; }
 
 echo "Hive site configuration updated and schema initialized successfully."
