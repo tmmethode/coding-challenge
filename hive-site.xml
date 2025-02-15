@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <property>
+        <name>hive.metastore.db.type</name>
+        <value>DERBY</value>
+        <description>Type of database used by the metastore.</description>
+    </property>
+    <property>
+        <name>javax.jdo.option.ConnectionURL</name>
+        <value>jdbc:derby:;databaseName=metastore_db;create=true</value>
+        <description>JDBC connect string for a JDBC metastore using Derby.</description>
+    </property>
+    <property>
+        <name>javax.jdo.option.ConnectionDriverName</name>
+        <value>org.apache.derby.jdbc.EmbeddedDriver</value>
+        <description>Driver class name for a JDBC metastore using Derby.</description>
+    </property>
+    <property>
+        <name>javax.jdo.option.ConnectionUser Name</name>
+        <value>APP</value>
+        <description>Username to use against the Derby database.</description>
+    </property>
+    <property>
+        <name>javax.jdo.option.ConnectionPassword</name>
+        <value>root</value>
+        <description>Password to use against the Derby database.</description>
+    </property>
+</configuration>
